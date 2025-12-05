@@ -1,6 +1,11 @@
 /* Google Font  */
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/*Image credits: 
+Hero background image & CTA: Pawel Czerwinski
+Showcase background image: Getty Images
+Booking page image: Vojtech Bruzek
+*/
 /* Normalizing CSS */
 * {
     padding: 0;
@@ -93,6 +98,10 @@ a:hover {
     .hero__title {
         text-align: center;
         font-size: 64px;
+    }
+
+    .hero__sub-title {
+        text-align: center;
     }
 }
 /* hero section ends here */
@@ -265,6 +274,10 @@ a:hover {
         }
     }
 }
+
+.cta__container--aboutus {
+    background-image: none;
+}
 /* CTA ends here */
 /* Main page content completed*/
 
@@ -381,6 +394,36 @@ a:hover {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+}
+/*Thank you page ends*/
+
+.site-wrapper--about {
+    background-image: url(https://images.unsplash.com/photo-1669295384050-a1d4357bd1d7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 40vh;
+}
+
+.aboutus {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    .aboutus__container {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .aboutus__heading {
+            font-size: 32px;
+        }
+
+        .aboutus__info {
+            max-width: 80%;
+            font-family: Inter;
+            align-self: center;
+        }
+    }
 }
 
 /* Starting responsiveness */
@@ -604,6 +647,30 @@ a:hover {
                     font-size: 30px;
                     text-align: center;
                 }
+            }
+        }
+    }
+
+    .aboutus {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        .aboutus__container {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .aboutus__heading {
+                font-size: 32px;
+            }
+
+            .aboutus__info {
+                max-width: 80%;
+                font-size: 12px;
+                align-self: center;
             }
         }
     }
