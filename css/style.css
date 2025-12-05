@@ -195,6 +195,7 @@ a:hover {
 
             .showcase__button {
                 font-family: Inter;
+                font-weight: 300;
                 font-size: 20px;
                 color: white;
                 cursor: pointer;
@@ -205,9 +206,12 @@ a:hover {
 
                 border-style: solid;
                 border-color: var(--CTA);
+                text-align: center;
+                padding: 0.5rem 0rem;
             }
 
             .showcase__button:hover {
+                text-decoration: none;
                 background-color: var(--CTA);
             }
         }
@@ -242,6 +246,7 @@ a:hover {
 
         .cta__button {
             font-family: Inter;
+            font-weight: 300;
             font-size: 20px;
             color: white;
             cursor: pointer;
@@ -249,8 +254,14 @@ a:hover {
             height: 3rem;
             border-radius: 50px;
             background-color: var(--CTA);
+            text-align: center;
+            padding: 0.7rem 0rem;
 
             border-style: none;
+        }
+
+        .cta__button:hover {
+            text-decoration: none;
         }
     }
 }
@@ -329,18 +340,23 @@ a:hover {
                             grid-row: 6 / span 1;
                             font-family: Inter;
                             font-size: 20px;
+                            font-weight: 300;
                             color: white;
                             cursor: pointer;
                             width: 100%;
                             border-radius: 50px;
                             background-color: black;
+                            padding: 0.5rem 0rem;
 
                             border-style: solid;
                             border-color: var(--CTA);
+                            text-align: center;
+                            place-self: center;
                         }
 
                         .booking__button:hover {
                             background-color: var(--CTA);
+                            text-decoration: none;
                         }
                     }
 
@@ -355,6 +371,18 @@ a:hover {
 }
 
 /* Booking page content completed*/
+
+/* Thank you page start*/
+.thankyou {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 /* Starting responsiveness */
 @media (max-width: 1800px) {
     .booking {
@@ -640,4 +668,4 @@ a:hover {
     }
 }
 
-/* End of HOMEPAGE responsiveness */
+/* End of responsiveness */
